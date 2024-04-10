@@ -1,9 +1,9 @@
 #!/usr/bin/python3
-
 """
 defines a rectangle
 """
 
 
 class Rectangle:
-    pass  # An empty block
+    """Empty block"""
+    pass
