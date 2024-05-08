@@ -1,34 +1,32 @@
-The "0-add_integer" module
-==========================
+The following are the test cases of the add_integer function:
+===================
 
->>> add_integer = __import__('0-add_integer').add_integer
+The add_integer function takes two interger or float numbers, and adds them together
 
->>> add_integer(3, 2)
-5
+Scenarios:
+=========
 
->>> add_integer(-100)
--2
+Basic Addition:
+		>>>add_integer(1, 2)
+		3
 
->>> add_integer(20, -50)
--30
+Addition with a positive and negative integer:
+		>>>add_integer(100, -2)
+		98
 
->>> add_integer(4, "School")
-Traceback (most recent call last):
-	...
-TypeError: b must be an integer
+Addition with the default value:
+		>>>add_integer(2)
+		100
 
->>> add_integer(None)
-Traceback (most recent call last):
-	...
-TypeError: a must be an integer
+Addition with float numbers:
+		>>>add_integer(100.3, -2)
+		98
 
->>> add_integer(100.3, -2)
-98
+Addition between an integer and a string:
+		>>>add_integer(4, "School")
+		b must be an integer
 
->>> add_integer(0)
-98
+No arguments passed to the fucntion:
+		>>>add_integer(None)
+		a msut be an integer
 
->>> add_integer("Dog","Puppy")
-Traceback (most recent call last):
-	...
-TypeError: a must be an integer
