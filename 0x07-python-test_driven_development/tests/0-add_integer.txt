@@ -1,0 +1,32 @@
+The following are the test cases of the add_integer function:
+===================
+
+The add_integer function takes two interger or float numbers, and adds them together
+
+Scenarios:
+=========
+
+Basic Addition:
+		>>>add_integer(1, 2)
+		3
+
+Addition with a positive and negative integer:
+		>>>add_integer(100, -2)
+		98
+
+Addition with the default value:
+		>>>add_integer(2)
+		100
+
+Addition with float numbers:
+		>>>add_integer(100.3, -2)
+		98
+
+Addition between an integer and a string:
+		>>>add_integer(4, "School")
+		b must be an integer
+
+No arguments passed to the fucntion:
+		>>>add_integer(None)
+		a msut be an integer
+
