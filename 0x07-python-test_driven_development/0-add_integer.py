@@ -1,12 +1,12 @@
 #!/usr/bin/python3
 
-"""
+'''
 My addition module
-"""
+'''
 
 
 def add_integer(a, b=98):
-    """This function adds two integers.
+    '''This function adds two integers.
 
     Args:
         a (int or float): The first integer.
@@ -17,7 +17,7 @@ def add_integer(a, b=98):
 
     Raises:
         TypeError: if a or b is not an integer or float.
-    """
+    '''
     if ((not isinstance(a, int) and not isinstance(a, float))):
         raise TypeError("a must be an integer")
     if ((not isinstance(b, int) and not isinstance(b, float))):
