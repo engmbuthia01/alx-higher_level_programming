@@ -7,12 +7,11 @@ an object is an instance of a class
 
 def is_same_class(obj, a_class):
     """
-    returns True if the object is exactly an instance of the specified class ;
-    otherwise False
+    Checks whether an object is exactly an instance of the specified class
     Args:
         obj: object
         a_class: the class
+    Return: True or False
     """
-    if type(obj) == a_class:
-        return True
-    return False
+    
+    return (type(obj) == a_class)
