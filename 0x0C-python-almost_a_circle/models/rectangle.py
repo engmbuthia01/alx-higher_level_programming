@@ -7,7 +7,7 @@ that inherits from the base class
 from models.base import Base
 
 
-    class Rectangle(Base):
+class Rectangle(Base):
     """inherits from Base"""
 
     def __init__(self, width, height, x=0, y=0, id=None):
@@ -35,7 +35,7 @@ from models.base import Base
     def height(self):
         """accesses the attribute (height) of a class"""
         return self.__height
-    
+
     @height.setter
     def height(self, value):
         """modifies the value for height"""
