@@ -1,19 +1,18 @@
 #!/usr/bin/python3
-"""
-This is a module that defines a
-base class
-"""
+"""Defines Base class"""
+import json
+import csv
+import turtle
 
 
 class Base:
-    """This is the base class"""
+    """Base class body.
+    """
 
     __nb_objects = 0
 
     def __init__(self, id=None):
-        """
-        class constructor initializing
-        objects of a class
+        """Initialize Id in a constructor
         """
         if id is not None:
             self.id = id
@@ -21,7 +20,7 @@ class Base:
             Base.__nb_objects += 1
             self.id = Base.__nb_objects
 
-        @staticmethod
+    @staticmethod
     def to_json_string(list_dictionaries):
         """ convert result to Json
         """
@@ -130,3 +129,4 @@ class Base:
             pen.right(90)
 
         window.exitonclick()
+
