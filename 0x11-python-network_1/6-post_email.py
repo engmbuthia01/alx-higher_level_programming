@@ -7,7 +7,7 @@ with the email as a parameter,
 displays the body of the response
 """
 
-import sys 
+import sys
 import requests
 
 
